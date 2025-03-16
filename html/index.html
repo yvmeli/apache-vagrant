@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola mundo - Servidor Apache con Vagrant</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .info {
+            background-color: #f8f9fa;
+            border-left: 4px solid #4CAF50;
+            padding: 1rem;
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-top: 2rem;
+        }
+        
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Hola Mundo!</h1>
+        <p>Este es un servidor web <span class="highlight">Apache</span> ejecutandose en una maquina virtual gestionada por <span class="highlight">Vagrant</span>.</p>
+        
+        <div class="info">
+            <p><strong>Detalles del servidor:</strong></p>
+            <ul>
+                <li>Sistema operativo: Ubuntu 20.04 LTS</li>
+                <li>Recursos: 512MB RAM, 1 CPU</li>
+                <li>Servidor web: Apache 2</li>
+            </ul>
+        </div>
+        
+        <p>Esta página se esta sirviendo desde un directorio compartido entre tu máquina local y la máquina virtual.</p>
+        
+        <div class="footer">
+            Creado como parte de una práctica de virtualización y servicios web.
+        </div>
+    </div>
+</body>
+</html>
